@@ -1,0 +1,28 @@
+name:                lift-read-show
+version:             0.1.0.0
+synopsis:            Utilities to define instances of `Read1` and `Show1` and such
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              M Farkas-Dyck
+maintainer:          m.farkasdyck@gmail.com
+-- copyright:           
+category:            Text
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Util.Functor.Classes.Text.Read
+                     , Util.Functor.Classes.Text.Show
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.9 && <4.12
+                     , transformers >=0.4 && <0.6
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
+  default-extensions:  RecordWildCards
+                     , StandaloneDeriving
+                     , DeriveFunctor
+                     , GeneralizedNewtypeDeriving
+  ghc-options:         -Wall -Wno-name-shadowing
